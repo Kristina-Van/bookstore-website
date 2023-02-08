@@ -14,12 +14,12 @@ import {Route, Routes, Link} from "react-router-dom";
 const Header = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="md" variant="light" bg="light">
                 <Container>
                     <NavbarBrand href="/">
                         <img src={logo}
-                             height="30"
-                             width="30"
+                             height="70"
+                             width="80"
                              className="d-inline-block align-top"
                              alt=""/>
                     </NavbarBrand>
@@ -27,10 +27,10 @@ const Header = () => {
                     <NavbarToggle area-controls="responsive-navbar-nav"/>
                     <NavbarCollapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Link to={`/`}>Home</Link>
-                            <Link to={`/about`}>About</Link>
-                            <Link to={`/contacts`}>Contacts</Link>
-                            <Link to={`/photos`}>Photos</Link>
+                            <Link to={`/`} className="me-2">Home</Link>
+                            <Link to={`/about`} className="me-2">About</Link>
+                            <Link to={`/contacts`} className="me-2">Contacts</Link>
+                            <Link to={`/photos`} className="me-2">Photos</Link>
                         </Nav>
                         <Form inline="true">
                             <FormControl
